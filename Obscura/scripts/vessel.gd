@@ -9,11 +9,13 @@ const HEIGHT:float = RADIUS * 2.0
 const WIDTH:float = RADIUS * 2.0
 
 const BASE_SPEED = 50
-const HYPER_SPEED = 300
+const HYPER_SPEED = 200
+
+var speed:float
 
 func _physics_process(_delta):
 	
-	var speed = BASE_SPEED
+	speed = BASE_SPEED
 	$ParticleTrail.visible = false 
 	if Input.is_action_pressed("ui_accept"):
 		_play($Audio/HyperSpeed)

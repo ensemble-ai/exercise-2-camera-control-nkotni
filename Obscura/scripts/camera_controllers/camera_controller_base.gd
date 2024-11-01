@@ -42,6 +42,9 @@ func _process(delta: float) -> void:
 	position.y = target.position.y + dist_above_target
 
 
+func on_switch() -> void:
+	global_position = target.global_position
+
 
 func draw_logic() -> void:
 	pass
