@@ -38,6 +38,8 @@ func _process(delta: float) -> void:
 	elif diff_between_left_edges_speedup < 0:
 		if target.velocity.x < 0:
 			_velocity_x = target.velocity.x * push_ratio
+		if _velocity_z == 0 and target.velocity.z != 0:
+			_velocity_z = target.velocity.z * push_ratio
 	
 	#right
 	var diff_between_right_edges = (tpos.x + target.WIDTH / 2.0) - (cpos.x + pushbox_bottom_right.x)
@@ -47,6 +49,8 @@ func _process(delta: float) -> void:
 	elif diff_between_right_edges_speedup > 0:
 		if target.velocity.x > 0:
 			_velocity_x = target.velocity.x * push_ratio
+		if _velocity_z == 0 and target.velocity.z != 0:
+			_velocity_z = target.velocity.z * push_ratio
 	
 	#top
 	var diff_between_top_edges = (tpos.z - target.HEIGHT / 2.0) - (cpos.z + pushbox_top_left.y)
@@ -56,6 +60,8 @@ func _process(delta: float) -> void:
 	elif diff_between_top_edges_speedup < 0:
 		if target.velocity.z < 0:
 			_velocity_z = target.velocity.z * push_ratio
+		if _velocity_x == 0 and target.velocity.x != 0:
+			_velocity_x = target.velocity.x * push_ratio
 	
 	#bottom
 	var diff_between_bottom_edges = (tpos.z + target.HEIGHT / 2.0) - (cpos.z + pushbox_bottom_right.y)
@@ -65,6 +71,8 @@ func _process(delta: float) -> void:
 	elif diff_between_bottom_edges_speedup > 0:
 		if target.velocity.z > 0:
 			_velocity_z = target.velocity.z * push_ratio
+		if _velocity_x == 0 and target.velocity.x != 0:
+			_velocity_x = target.velocity.x * push_ratio
 		
 	
 	super(delta)
