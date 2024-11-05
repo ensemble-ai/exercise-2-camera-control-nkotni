@@ -89,7 +89,7 @@ This stage successfully meets multiple requirements. The vessel cannot breach th
 
 Occassionally inconsistent line spaces within functions: [two lines](https://github.com/ensemble-ai/exercise-2-camera-control-nkotni/blob/3e5babba64eb105596c57327472943057002178e/Obscura/scripts/camera_controllers/position_lock.gd#L41), [three lines](https://github.com/ensemble-ai/exercise-2-camera-control-nkotni/blob/3e5babba64eb105596c57327472943057002178e/Obscura/scripts/camera_controllers/lerp_target.gd#L65). This is a small infraction which appears in multiple scripts and can lead to indistinction between code within functions and separation between functions.
 
-[Three lines separating functions](https://github.com/ensemble-ai/exercise-2-camera-control-nkotni/blob/3e5babba64eb105596c57327472943057002178e/Obscura/scripts/camera_controllers/lock_lerp.gd#L73) or [one line](https://github.com/ensemble-ai/exercise-2-camera-control-nkotni/blob/3e5babba64eb105596c57327472943057002178e/Obscura/scripts/camera_controllers/four_way_push.gd#L13). This is not seen too often code however.
+[Three lines separating functions](https://github.com/ensemble-ai/exercise-2-camera-control-nkotni/blob/3e5babba64eb105596c57327472943057002178e/Obscura/scripts/camera_controllers/lock_lerp.gd#L73) or [one line](https://github.com/ensemble-ai/exercise-2-camera-control-nkotni/blob/3e5babba64eb105596c57327472943057002178e/Obscura/scripts/camera_controllers/four_way_push.gd#L13). This is not seen too often in the code however.
 
 ### Style Guide Exemplars ###
 
