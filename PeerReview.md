@@ -48,7 +48,7 @@ Vessel remains centered on screen with position lock camera. A cross hair can be
 - [ ] Unsatisfactory
 
 #### Justification ##### 
-Vessel cannot breach the bounds of the autoscroll camera box, remaining perefectly at each edge when attempting to go outside box. The vessel's speed is also made proportional to camera movement,allowing vessel control to feel relatively no different than without the autoscroll. This is a valid gameplay feel change that the programmer added. The bounds of the autoscroll box have appropriate proportions and can be toggled successfully.
+Vessel cannot breach the bounds of the autoscroll camera box, remaining perefectly at each edge when attempting to go outside box. The vessel's speed is also made proportional to camera movement, allowing vessel control to feel relatively no different than without the autoscroll. This is a valid gameplay feel change that the programmer added. The bounds of the autoscroll box have appropriate proportions and can be toggled successfully.
 
 ### Stage 3 ###
 
@@ -70,7 +70,7 @@ This stage successfully meets all requirements: when unmoving, vessel remains ce
 - [ ] Unsatisfactory
 
 #### Justification ##### 
-This stage also successfully meets all requirements: When moving, the camera leads in front of vessel and in the same direction as vessel velocity at a faster speed initially and at vessel speed once a certain leash distance away. When vessel stops, the camera pauses for a given delay and then centers smoothly on the vessel. A cross hair can be toggled marking the camera's center accurately.
+This stage also successfully meets all requirements: when moving, the camera leads in front of the vessel and in the same direction as vessel velocity at a faster speed initially and at vessel speed once a certain leash distance away. When vessel stops, the camera pauses for a given delay and then centers smoothly on the vessel. A cross hair can be toggled marking the camera's center accurately.
 
 ### Stage 5 ###
 
@@ -87,9 +87,9 @@ This stage successfully meets multiple requirements. The vessel cannot breach th
 
 ### Style Guide Infractions ###
 
-Occassionally inconsistent line spaces within functions: [one line](https://github.com/ensemble-ai/exercise-2-camera-control-nkotni/blob/3e5babba64eb105596c57327472943057002178e/Obscura/scripts/camera_controllers/four_way_push.gd#L13), [two lines](https://github.com/ensemble-ai/exercise-2-camera-control-nkotni/blob/3e5babba64eb105596c57327472943057002178e/Obscura/scripts/camera_controllers/position_lock.gd#L41), [three lines](https://github.com/ensemble-ai/exercise-2-camera-control-nkotni/blob/3e5babba64eb105596c57327472943057002178e/Obscura/scripts/camera_controllers/lerp_target.gd#L65). This is a small infraction which appears in multiple scripts and can lead to indistinction between code within functions and separation between functions.
+Occassionally inconsistent line spaces within functions: [two lines](https://github.com/ensemble-ai/exercise-2-camera-control-nkotni/blob/3e5babba64eb105596c57327472943057002178e/Obscura/scripts/camera_controllers/position_lock.gd#L41), [three lines](https://github.com/ensemble-ai/exercise-2-camera-control-nkotni/blob/3e5babba64eb105596c57327472943057002178e/Obscura/scripts/camera_controllers/lerp_target.gd#L65). This is a small infraction which appears in multiple scripts and can lead to indistinction between code within functions and separation between functions.
 
-[Three lines separating functions](https://github.com/ensemble-ai/exercise-2-camera-control-nkotni/blob/3e5babba64eb105596c57327472943057002178e/Obscura/scripts/camera_controllers/lock_lerp.gd#L73) here, but is only seen once in the code.
+[Three lines separating functions](https://github.com/ensemble-ai/exercise-2-camera-control-nkotni/blob/3e5babba64eb105596c57327472943057002178e/Obscura/scripts/camera_controllers/lock_lerp.gd#L73) or [one line](https://github.com/ensemble-ai/exercise-2-camera-control-nkotni/blob/3e5babba64eb105596c57327472943057002178e/Obscura/scripts/camera_controllers/four_way_push.gd#L13). This is not seen too often code however.
 
 ### Style Guide Exemplars ###
 
@@ -99,7 +99,7 @@ Overall style is very consistent, clean and legible. Variables are declared in p
 
 ### Best Practices Infractions ###
 
-There are only a couple commits to the repository, more commits could be beneficial and more in line with best practice.
+There are only a couple commits to the repository; more commits could be beneficial and in line with best practice.
 
 [This conditional statement](https://github.com/ensemble-ai/exercise-2-camera-control-nkotni/blob/3e5babba64eb105596c57327472943057002178e/Obscura/scripts/camera_controllers/lerp_target.gd#L46) could benefit from some comments, as there are a lot of nested ifs and math/logic.
 
